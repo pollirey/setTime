@@ -1,0 +1,45 @@
+ 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.bar {
+    width: 400px;
+    height: 30px;
+    background-color: #333;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg , #b1ffac , #00d031);
+    transition: width 0.1s linear;
+}
+
+#percent {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#start {
+    padding: 12px 28px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    background-color: #2e1515;
+    color: #ffffff;
+}
+
+#start:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
