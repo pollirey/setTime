@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../common.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="demo-wrap">
+        <h1>Оформление заказа</h1>
+        <p>Не трогайте страницу 10 секунд, появится напоминание.</p>
+        <form class="order-form" id="orderForm">
+            <label>Имя
+                <input type="text" name="name" placeholder="Введите имя" required>
+            </label>
+            <label>Телефон
+                <input type="tel" name="phone" placeholder="Введите номер" required>
+            </label>
+            <label>Адрес
+                <textarea name="adress" placeholder="Введите адрес" required></textarea>
+            </label>
+            <button class="btn" type="submit">Оформить заказ</button>
+        </form>
+    </div>
+    <div class="reminder" id="reminder">
+        <p>Вы не завершили оформление. Продолжить?</p>
+        <button class="btn" id="reminderClose">Я тут</button>
+    </div>
+</body>
+</html>

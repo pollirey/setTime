@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../common.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="demo-wrap">
+        <h1>Exit-intent</h1>
+        <p>Уведите курсор за верхнюю границу окна через 15 секунд</p>
+        <p id="timeOnPage">Время на странице: 0 сек.</p>
+        <button class="btn" id="resetBtn">Сбросить флаг</button>
+    </div>
+    <div class="overlay" id="exitOverlay">
+        <div class="modal">
+            <h2>Подождите! Вам подарок.</h2>
+            <p>Дарим промокод <strong>STAY10</strong></p>
+            <button class="btn" id="exitClose">Забрать промокод</button>
+        </div>
+    </div>
+</body>
+</html>
